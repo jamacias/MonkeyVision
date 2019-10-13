@@ -19,4 +19,3 @@ class FirstStage:
         steeringDrive.on_for_seconds(0, SpeedPercent(-40), 2)
 
         print("First over")
-        
