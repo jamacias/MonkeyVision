@@ -1,21 +1,12 @@
-#!/usr/bin/env python3
-#from FirstStage import *
-from SecondStage import *
-#from ThirdStage import *
-#from FifthStage import *
-import os
-os.system('setfont Lat15-TerminusBold24x12')
+#!/usr/bin/env pybricks-micropython
 
-if __name__ == "__main__":
-    
-    ##first = FirstStage()
-    #first.start()
+from pybricks import ev3brick as brick
+from pybricks.ev3devices import (Motor, TouchSensor, ColorSensor,
+                                 InfraredSensor, UltrasonicSensor, GyroSensor)
+from pybricks.parameters import (Port, Stop, Direction, Button, Color,
+                                 SoundFile, ImageFile, Align)
+from pybricks.tools import print, wait, StopWatch
+from pybricks.robotics import DriveBase
 
-    second = SecondStage()
-    second.start()
-
-    #third = ThirdStage()
-    #third.Start()
-
-    #fifth = FifthStage()
-    #fifth.start()
+# Write your program here
+brick.sound.beep()
